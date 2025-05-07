@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Crie seu site profissional com a Agência Cervo Digital. Planos a partir de R$297.">
+  <title>Landing Page - Cervo Digital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-size: 2rem;
+      color: #222;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+    .benefits, .plans, .contact, .testimonials {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .benefits ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .benefits li::before {
+      content: '✅';
+      margin-right: 10px;
+    }
+    .plans table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    .plans th, .plans td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+    }
+    .plans th {
+      background-color: #eee;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    input, select, button {
+      padding: 12px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #1a1a1a;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #444;
+    }
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.9rem;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Crie seu site profissional com a Cervo Digital</h1>
+    <p>Ideal para pequenas empresas, autônomos e lojas virtuais</p>
+  </header>
+
+  <section class="benefits">
+    <h2>O que oferecemos</h2>
+    <ul>
+      <li>Design moderno e responsivo</li>
+      <li>Configuração em até 7 dias úteis</li>
+      <li>SEO básico incluso</li>
+      <li>Suporte via WhatsApp</li>
+    </ul>
+  </section>
+
+  <section class="plans">
+    <h2>Planos Disponíveis</h2>
+    <table>
+      <tr>
+        <th>Pacote</th>
+        <th>Preço</th>
+        <th>Incluso</th>
+      </tr>
+      <tr>
+        <td>Site Básico</td>
+        <td>R$297</td>
+        <td>Página única, formulário de contato</td>
+      </tr>
+      <tr>
+        <td>Site Completo</td>
+        <td>R$497</td>
+        <td>Até 5 páginas, integração com redes</td>
+      </tr>
+      <tr>
+        <td>E-commerce</td>
+        <td>R$997</td>
+        <td>Loja com até 20 produtos</td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="contact">
+    <h2>Solicite um Orçamento</h2>
+    <form action="https://formsubmit.co/SEUEMAILAQUI" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="tel" name="whatsapp" placeholder="Seu WhatsApp" required>
+      <select name="tipo-site" required>
+        <option value="">Escolha o tipo de site</option>
+        <option value="basico">Site Básico</option>
+        <option value="completo">Site Completo</option>
+        <option value="ecommerce">E-commerce</option>
+      </select>
+      <button type="submit">Quero um orçamento rápido</button>
+    </form>
+  </section>
+
+  <section class="testimonials">
+    <h2>O que dizem nossos clientes</h2>
+    <p><em>“A Cervo Digital criou meu site em tempo recorde e com qualidade excelente.”</em><br>– Cliente satisfeito</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Agência Cervo Digital - Todos os direitos reservados.
+  </footer>
+
+  <a href="https://wa.me/55SEUNUMERO" class="whatsapp-float" target="_blank">📱 Fale pelo WhatsApp</a>
+</body>
+</html>
